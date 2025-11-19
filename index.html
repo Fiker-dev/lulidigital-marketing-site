@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuliDigital Marketing – Simple, Effective Growth</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #0f172a;
+            color: #eee;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(15,23,42,0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #22d3ee;
+        }
+
+        .hero {
+            padding: 80px 40px;
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            margin-top: 16px;
+            font-size: 20px;
+            color: #94a3b8;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin-top: 25px;
+            background: #22d3ee;
+            color: #0f172a;
+            padding: 14px 26px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background: #0ea5e9;
+        }
+
+        .section {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 34px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: auto;
+            font-size: 16px;
+        }
+
+        .grid {
+            margin-top: 50px;
+            display: grid;
+            gap: 30px;
+        }
+
+        /* SERVICES GRID */
+        .services-grid {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 26px;
+        }
+
+        .service-card {
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            border-radius: 20px;
+            padding: 26px;
+            box-shadow: 0px 18px 45px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(54, 207, 201, 0.55);
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 18px;
+            filter: invert(90%);
+        }
+
+        .service-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .service-body {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        .service-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+
+        .service-list li {
+            margin-bottom: 7px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .service-list li::before {
+            content: "•";
+            color: #22d3ee;
+            position: absolute;
+            left: 0;
+        }
+
+        /* HOW WE WORK */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .step-card {
+            padding: 26px;
+            background: #1e293b;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 40px;
+            color: #94a3b8;
+        }
+
+        .contact-box {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+
+        .contact-box a {
+            color: #22d3ee;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LuliDigital Marketing</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#work">How we work</a>
+        <a href="#contact">Contact</a>
+        <a href="https://ai.lulidigital.com">AI Services</a>
+        <a href="https://wa.me/27602551513">WhatsApp Us</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Marketing that brings you customers.</h1>
+    <p>Simple. Clear. Effective. Built for busy people.</p>
+    <a href="https://wa.me/27602551513" class="btn-primary">WhatsApp Us</a>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+    <h2 class="section-title">What We Do</h2>
+    <p class="section-subtitle">Short, punchy, and built for real business growth.</p>
+
+    <div class="grid services-grid">
+
+        <article class="service-card">
+            <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/image.svg" class="icon">
+            <h3 class="service-title">Social Media Management</h3>
+            <p class="service-body">Stay visible. Stay consistent. We handle everything.</p>
+            <ul class="service-list">
+                <li>Weekly content</li>
+                <li>Reels & stories</li>
+                <li>Captions included</li>
+            </ul>
+        </article>
+
+        <article class="service-card">
+            <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/target.svg" class="icon">
+            <h3 class="service-title">Paid Ads</h3>
+            <p class="service-body">Reach the right people. Fast.</p>
+            <ul class="service-list">
+                <li>Meta ads</li>
+                <li>Google search ads</li>
+                <li>Retargeting</li>
+            </ul>
+        </article>
+
+        <article class="service-card">
+            <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/layout.svg" class="icon">
+            <h3 class="service-title">Websites & Landing Pages</h3>
+            <p class="service-body">Look professional. Sell with confidence.</p>
+            <ul class="service-list">
+                <li>Websites</li>
+                <li>Sales pages</li>
+                <li>Mobile-ready</li>
+            </ul>
+        </article>
+
+        <article class="service-card">
+            <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/video.svg" class="icon">
+            <h3 class="service-title">Content Creation</h3>
+            <p class="service-body">Your brand, but better.</p>
+            <ul class="service-list">
+                <li>Reels</li>
+                <li>Carousels</li>
+                <li>Product visuals</li>
+            </ul>
+        </article>
+
+        <article class="service-card">
+            <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/search.svg" class="icon">
+            <h3 class="service-title">SEO & Local Ranking</h3>
+            <p class="service-body">Get found when people search.</p>
+            <ul class="service-list">
+                <li>Maps ranking</li>
+                <li>Website SEO</li>
+                <li>Keywords</li>
+            </ul>
+        </article>
+
+        <article class="service-card">
+            <img src="https://cdn.jsdelivr.net/npm/feather-icons/dist/icons/message-square.svg" class="icon">
+            <h3 class="service-title">WhatsApp Automation</h3>
+            <p class="service-body">More replies. Less effort.</p>
+            <ul class="service-list">
+                <li>Auto-replies</li>
+                <li>FAQ flows</li>
+                <li>Lead capture</li>
+            </ul>
+        </article>
+
+    </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="work" class="section">
+    <h2 class="section-title">How We Work</h2>
+    <p class="section-subtitle">Simple steps. Clear process.</p>
+
+    <div class="steps">
+        <div class="step-card">1. Tell us what you need</div>
+        <div class="step-card">2. We make the plan</div>
+        <div class="step-card">3. We execute weekly</div>
+        <div class="step-card">4. You get results</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2 class="section-title">Talk to Us</h2>
+    <div class="contact-box">
+        WhatsApp: <a href="https://wa.me/27602551513">+27 60 255 1513</a><br><br>
+        Email: <a href="mailto:contact.lulidigital@gmail.com">contact.lulidigital@gmail.com</a>
+    </div>
+</section>
+
+<footer>
+    © 2025 LuliDigital Marketing – All rights reserved.
+</footer>
+
+</body>
+</html>
